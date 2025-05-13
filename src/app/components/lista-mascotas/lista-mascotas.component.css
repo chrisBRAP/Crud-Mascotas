@@ -1,0 +1,115 @@
+/* contenedor de tabla */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/*diseño celdas tabla  */
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  margin-right: 5px;
+}
+
+.mat-paginator {
+  display: flex;
+  justify-content: center;
+}
+
+.acciones-cell {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mat-icon-button {
+  width: 40px;
+  height: 40px;
+}
+
+::ng-deep .mat-paginator-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 15px;
+}
+
+::ng-deep .mat-paginator-page-size {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px;
+}
+
+::ng-deep .mat-select-panel {
+  z-index: 1000 !important;
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) !important;
+  max-height: 200px !important;
+  overflow-y: auto !important;
+}
+
+::ng-deep .mat-option {
+  height: 36px !important;
+  line-height: 36px !important;
+  padding-left: 12px !important;
+  font-size: 14px !important;
+}
+
+::ng-deep .cdk-overlay-pane {
+  overflow: visible !important;
+  position: absolute !important;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.search-container input {
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.search-container input::placeholder {
+  color: #999;
+}
+
+.btn-accion {
+  background-color: white !important;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.icono-sin-fondo {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+}
+
+.mat-icon-button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}

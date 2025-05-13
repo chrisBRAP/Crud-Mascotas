@@ -1,0 +1,15 @@
+<header class="header">
+  <div class="header-content">
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <h1 class="title">Registrar Mascota</h1>
+  </div>
+</header>
+
+<div class="side-menu" [ngClass]="{'menu-open': menuAbierto}">
+  <ul>
+    <li><a routerLink="/mascotas" (click)="cerrarMenu()"><i class="fas fa-paw" style="color: #b39ddb"></i> Ver Mascotas</a></li>
+    <li><a routerLink="/mascota/nueva" (click)="cerrarMenu()"><i class="fas fa-plus"></i> Agregar Mascota</a></li>
+  </ul>
+</div>
