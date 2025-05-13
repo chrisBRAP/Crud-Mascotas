@@ -1,27 +1,67 @@
-# RegistroMascotas
+# Crud Mascotas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+Este es un proyecto de CRUD para la gestión de mascotas, desarrollado en Angular.
 
-## Development server
+## Tecnologías Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Angular
+* Bootstrap
+* TypeScript
 
-## Code scaffolding
+## Estructura del Proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+|-- src
+    |-- app
+        |-- components
+            |-- agregar-editar-mascota
+            |-- lista-mascotas
+        |-- header
+        |-- models
+        |-- services
+    |-- assets
+    |-- environments
+|-- index.html
+|-- styles.css
+```
 
-## Build
+## Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clona el repositorio:
 
-## Running unit tests
+```bash
+ git clone https://github.com/chrisBRAP/Crud-Mascotas.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navega al directorio del proyecto:
 
-## Running end-to-end tests
+```bash
+ cd Crud-Mascotas
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Instala las dependencias:
 
-## Further help
+```bash
+ npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Ejecución
+
+Para ejecutar el proyecto en un servidor local:
+
+```bash
+ ng serve --o
+```
+
+Abre tu navegador en `http://localhost:4200/` para ver la aplicación.
+
+## Persistencia de Datos
+
+Los datos se almacenan de manera local para garantizar la persistencia al cerrar y abrir el sitio.
+
+Este proyecto está bajo la Licencia MIT.
+
+---
+
+Hecho con por [chrisBRAP](https://github.com/chrisBRAP)
+
